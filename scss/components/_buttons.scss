@@ -1,0 +1,44 @@
+.btn{
+    padding: 0.7em 1em;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    font-weight: 600;
+
+    &--main {
+        background-color: $clr-main;
+        color: $clr-white;
+
+        &:hover{
+            background-color: $clr-darken-main;
+        }
+    }
+
+    &--secondary {
+        background: $clr-secondary;
+        color: $clr-white;
+
+        &:hover{
+            background-color: $clr-darken-secondary;
+        }
+    }
+    
+}
+
+
+.field{
+    width: 100%;
+    padding:.5em;
+    margin-bottom: .7em;
+    border-radius: 5px;
+    border: none;
+
+    &:focus{
+        outline: none !important;
+        border: 2px solid $clr-darken-main;
+    }
+}
+
+
+

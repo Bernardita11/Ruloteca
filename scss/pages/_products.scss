@@ -1,0 +1,202 @@
+main{
+    .banner-section-products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/products/banner-section-products.jpg) no-repeat center;
+        background-size: cover;
+        width: 100vw;
+        height: 60vh;
+        text-align: center;
+    
+        span {
+            font-size: 2em;
+            color: $clr-white;
+            text-transform: uppercase;
+            font-weight: 300;
+            background: $clr-secondary;
+            padding: 5px 25px;
+        }
+    
+    }
+
+    .featured-categories{
+        display: flex;
+        flex-flow: column nowrap;
+
+        .heading{
+            
+            h1{
+                text-align: center;
+                margin: 0;
+                font-size: 2em;
+                margin: 2em 0;
+                padding: 0;
+            }
+        }
+
+        .flex-container-products{
+            @include flex-container-sm;
+            padding-bottom: 0;
+            padding-top: 0;
+
+            .img-container{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                width: 32.5%;
+                margin-bottom: 3em;
+                height:65vh;
+
+                span {
+                    font-size: 1.3em;
+                    color: $clr-white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    background: $clr-darken-main;
+                    padding: 5px 25px;
+                    transform: rotateZ(-90deg);
+                    text-align: center;
+                }
+
+                &-01{
+                    background: url(../assets/img/products/categories-panuelo-img.png) no-repeat center;
+                    background-size: cover;
+
+                    
+                }
+                &-02{
+                    background: url(../assets/img/products/categories-vinchas-img.png) no-repeat center;
+                    background-size: cover;
+                }
+                &-03{
+                    background: url(../assets/img/products/categories-cofia-img.png) no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }           
+    }
+
+    .all-products{
+
+        .products-section{
+            .heading{
+                padding: 0 20%;
+                text-align: center;
+                
+                h2{
+                    font-size: 1.2em;
+                    text-align: center;
+                    margin-bottom: 0.5em;
+                    margin-top: 0.5em;
+                    border-bottom: 3px solid $clr-secondary;
+                    border-radius: 2px;
+                    padding-bottom: 0.4em;
+                    text-transform: uppercase;   
+                }
+            }
+
+            .flex-container-products{
+                @include block-container-sm;
+
+                @media only screen and (min-width:641px){
+                    @include flex-container-sm;
+                }
+
+                @media only screen and (min-width:768px){
+                    @include flex-container-m;
+                }                     
+            
+                
+                
+
+                .block-container-product{
+                    
+                    .img-container{
+                        height: 30vh;
+
+                        &-001{
+                            background: url(../assets/img/products/panuelo-img-1.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-002{
+                            background: url(../assets/img/products/panuelo-img-2.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-003{
+                            background: url(../assets/img/products/panuelo-img-3.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-004{
+                            background: url(../assets/img/products/cofia-img-1.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-005{
+                            background: url(../assets/img/products/cofia-img-2.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-006{
+                            background: url(../assets/img/products/cofia-img-3.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-007{
+                            background: url(../assets/img/products/vincha-img-1.png) no-repeat center;
+                            background-size: contain;        
+                        }
+                        &-008{
+                            background: url(../assets/img/products/vincha-img-2.png) no-repeat center;
+                            background-size: contain;        
+                        }
+
+
+                    }
+
+                    .text-container{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        h3{ 
+                            padding: 3em;
+                            font-size: 1em;
+                            margin-top: 1.2em;
+                            margin-bottom: 0.5em;
+                            font-weight: 200;
+                            text-align: center;
+                            padding: 0 1.5em;
+                        }
+
+                        p{
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            margin-bottom: 0.5em;
+                        }
+
+                        .btn{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 5em;
+                            gap: 0.5em;
+                            font-size: 1em;
+                            width: 60%;
+
+                            @media only screen and (min-width:641px){
+                                width: 100%;
+                                font-size: 0.9em;
+                                
+                            }
+
+                            &__icon{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
